@@ -36,13 +36,21 @@ ul {
 .heading {
     font-size: 24px;
     font-weight: 900;
+    flex-shrink: 0;
 }
 
 .header-links {
     font-size: 18px;
     color: #e5e7eb;
     display: flex;
-    font-weight: 200;   
+    font-weight: 200;
+    flex-shrink: 0;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .intro {
@@ -85,6 +93,7 @@ ul {
     border-radius: 4px;
     padding: 8px 24px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .information {
@@ -108,6 +117,7 @@ ul {
     justify-content: space-between;
     align-items: baseline;
     gap: 100px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -133,6 +143,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .quote {
